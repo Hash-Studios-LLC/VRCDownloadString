@@ -68,6 +68,6 @@
 
 - You can update the `index.html` file in your repository at any time, either directly through the GitHub interface or by pushing changes from your local machine.
 - Once you commit and push these changes, they will be automatically reflected on your GitHub Pages website.
-- The next time a VRChat instance with the Hash Studios Patron Sync prefab linked to your website is launched or refreshed, it will automatically pull the updated list of VIPs/Patrons from the modified `index.html` file. This ensures real-time syncing of your patron list with the VRChat experience.
+- The next time a VRChat instance with the Hash Studios Patron Sync prefab linked to your website is launched, it will automatically pull the updated list of VIPs/Patrons from the modified `index.html` file. This ensures real-time syncing of your patron list with the VR experience.
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
