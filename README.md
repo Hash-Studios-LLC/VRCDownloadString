@@ -28,7 +28,9 @@ Using GitHub Pages, the files from a GitHub repository are converted into a stat
 
 Within the `index.html` file, a specific tagging system is used to denote the list of VIP/Patron players. The tags `[HS]` and `[/HS]` encapsulate the player data, signifying the start and end of the player list respectively. 
 
-Inside these tags, each player's name is separated by a comma. For instance, it could look something like: `[HS]player1, player2, player3[/HS]`.
+Inside these tags, each player's name is separated by a comma.
+
+For instance, it could look something like: `[HS]player1,player2,player3[/HS]`. Make sure not to include spaces unless it's part of the player's username.
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
