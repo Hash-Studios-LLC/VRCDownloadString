@@ -31,7 +31,8 @@ If you don’t have a GitHub account, sign up at [github.com](https://github.com
 
 - Create or upload an `index.html` file in the root of the repository.
 - Within the `index.html` file, use the `[HS]` and `[/HS]` tags to encapsulate the list of VIP/Patron players.
-- Inside these tags, list each player's name separated by a comma, like this: <br> `[HS]player1, player2, player3[/HS]`.
+- Inside these tags, list each player's name separated by a comma, like this: <br> `[HS]player1,player2,player3[/HS]`.
+- Make sure to not include spaces unless necessary.
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
