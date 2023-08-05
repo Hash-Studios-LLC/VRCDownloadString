@@ -30,7 +30,9 @@ Within the `index.html` file, a specific tagging system is used to denote the li
 
 Inside these tags, each player's name is separated by a comma.
 
-For instance, it could look something like: `[HS]player1,player2,player3[/HS]`. Make sure not to include spaces unless it's part of the player's username.
+For instance, it could look something like: <br>`[HS]player1,player2,player3[/HS]`. 
+
+Make sure not to include spaces unless it's part of the player's username.
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
