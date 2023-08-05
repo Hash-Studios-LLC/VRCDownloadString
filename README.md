@@ -1,6 +1,6 @@
 <img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5">
 
-# <p align="center"> Guide to Using Hash Studios Patron Sync </p>
+# <p align="center"> &nbsp; Guide to Using Hash Studios Patron Sync &nbsp; </p>
 
 <br>
 
