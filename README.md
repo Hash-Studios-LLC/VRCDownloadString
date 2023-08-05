@@ -23,7 +23,6 @@ If you don’t have a GitHub account, sign up at [github.com](https://github.com
 - Once logged in, click on the '+' icon in the top right corner and select 'New repository'.
 - Name the repository appropriately.
 - Add a description (optional) and choose public visibility to ensure the GitHub Pages website will be publicly accessible.
-- Optionally, initialize it with a README.
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
@@ -41,7 +40,6 @@ If you don’t have a GitHub account, sign up at [github.com](https://github.com
 - Go to the 'Settings' tab of your repository.
 - Scroll down to the 'GitHub Pages' section.
 - In the 'Source' drop-down, select the branch you want to use (usually `main` or `master`).
-- (Optional) Choose a theme. This is mostly for Jekyll-based websites.
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
