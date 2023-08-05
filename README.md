@@ -1,6 +1,14 @@
 # Guide to Using Hash Studios Patron Sync
 
-<br><br>
+<br>
+
+<br>
+<p align="center">
+  <img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosPatronSyncBanner.png" width="600" hspace="20"/>
+</p>
+<br>
+
+<br>
 
 ### How the GitHub Repository and its Linking Mechanism Works with the [HS] Tags:
 
