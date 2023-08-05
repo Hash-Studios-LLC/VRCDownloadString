@@ -12,38 +12,63 @@
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
-**Step 1:** **The GitHub Repository Structure**
+**1. Set Up a GitHub Account:** 
 
-The repository contains an `index.html` file. When located in the root or a designated 'docs' folder of the repository, this file can be utilized to create a GitHub Pages website, making its content accessible as a standard web page.
-
-<br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
-
-**Step 2:** **GitHub Pages Activation**
-
-Using GitHub Pages, the files from a GitHub repository are converted into a static website. The link, `https://lin8x.github.io/VRCDownloadString/`, serves as the GitHub Pages URL for the repository and will display the `index.html` content.
+If you don’t have a GitHub account, sign up at [github.com](https://github.com/).
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
-**Step 3:** **Using the [HS] Tags in `index.html`**
-
-Within the `index.html` file, a specific tagging system is used to denote the list of VIP/Patron players. The tags `[HS]` and `[/HS]` encapsulate the player data, signifying the start and end of the player list respectively. 
-
-Inside these tags, each player's name is separated by a comma.
-
-For instance, it could look something like: <br>`[HS]player1,player2,player3[/HS]`. 
-
-Make sure not to include spaces unless it's part of the player's username.
+**2. Create a New Repository:**
+   
+- Once logged in, click on the '+' icon in the top right corner and select 'New repository'.
+- Name the repository appropriately.
+- Add a description (optional) and choose public visibility to ensure the GitHub Pages website will be publicly accessible.
+- Optionally, initialize it with a README.
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
-**Step 4:** **VRChat's Integration with Hash Studios Patron Sync**
+**3. Adding Content with the [HS] Tags:**
 
-With VRChat's Udon scripting and the Hash Studios Patron tool, scripts can be embedded to fetch web resources. A script in VRChat sends a request to the GitHub Pages URL, fetches the content of the `index.html` file, and then scans for the `[HS]` and `[/HS]` tags. Upon locating these tags, the script extracts the list of players encapsulated within them.
+- Create or upload an `index.html` file in the root of the repository.
+- Within the `index.html` file, use the `[HS]` and `[/HS]` tags to encapsulate the list of VIP/Patron players.
+- Inside these tags, list each player's name separated by a comma, like this: <br> `[HS]player1, player2, player3[/HS]`.
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
-**Step 5:** **Processing the Player Data**
+**4. Configure GitHub Pages:**
 
-Once the data between the `[HS]` and `[/HS]` tags is fetched, the script can parse each player's information. The comma-separated list is split to identify individual player names. With this data in hand, VRChat can offer customized experiences, granting players their respective VIP or Patron statuses and associated privileges.
+- Go to the 'Settings' tab of your repository.
+- Scroll down to the 'GitHub Pages' section.
+- In the 'Source' drop-down, select the branch you want to use (usually `main` or `master`).
+- (Optional) Choose a theme. This is mostly for Jekyll-based websites.
+
+<br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
+
+**5. Custom URL:**
+
+- GitHub Pages will provide a default URL like `username.github.io/repositoryName`.
+- To use a custom domain, add it in the 'Custom domain' section under 'GitHub Pages' in settings.
+
+<br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
+
+**6. Access Your Site & Verify:**
+
+- Visit the GitHub Pages URL to view your site and ensure the `[HS]` tags and player list appear as expected.
+
+<br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
+
+**7. Integration with Hash Studios Patron Sync:**
+
+- Purchase the Hash Studios Patron Sync prefab at [Hash Studios LLC](https://hashstudiosllc.com/hashstudiospatronsync).
+- Within VRChat, find the Hash Studios Patron Sync prefab and enter your GitHub Pages URL (e.g., `username.github.io/repositoryName`) where it asks for the website link. This will ensure the prefab fetches the VIP/Patron list from your GitHub Page.
+- The prefab will handle the extraction of player names from the `[HS]` tags and process the comma-separated list, granting the corresponding VIP or Patron status within VRChat.
+
+<br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
+
+**8. Updating and Reflecting Changes:**
+
+- You can update the `index.html` file in your repository at any time, either directly through the GitHub interface or by pushing changes from your local machine.
+- Once you commit and push these changes, they will be automatically reflected on your GitHub Pages website.
+- The next time a VRChat instance with the Hash Studios Patron Sync prefab linked to your website is launched or refreshed, it will automatically pull the updated list of VIPs/Patrons from the modified `index.html` file. This ensures real-time syncing of your patron list with the VRChat experience.
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
