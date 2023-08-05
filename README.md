@@ -14,7 +14,7 @@
 
 **1. Set Up a GitHub Account:** 
 
-If you don’t have a GitHub account, sign up at [github.com](https://github.com/).
+- If you don’t have a GitHub account, sign up at [github.com](https://github.com/).
 
 <br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
@@ -58,7 +58,7 @@ If you don’t have a GitHub account, sign up at [github.com](https://github.com
 
 **7. Integration with Hash Studios Patron Sync:**
 
-- Purchase the Hash Studios Patron Sync prefab at [Hash Studios LLC](https://hashstudiosllc.com/hashstudiospatronsync).
+- Purchase the Hash Studios Patron Sync prefab at [Hash Studios LLC's Website](https://hashstudiosllc.com/hashstudiospatronsync).
 - Within VRChat, find the Hash Studios Patron Sync prefab and enter your GitHub Pages URL (e.g., `username.github.io/repositoryName`) where it asks for the website link. This will ensure the prefab fetches the VIP/Patron list from your GitHub Page.
 - The prefab will handle the extraction of player names from the `[HS]` tags and process the comma-separated list, granting the corresponding VIP or Patron status within VRChat.
 
