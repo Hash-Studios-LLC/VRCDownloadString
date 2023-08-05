@@ -1,6 +1,6 @@
 <img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5">
 
-# Guide to Using Hash Studios Patron Sync
+# <p align="center"> Guide to Using Hash Studios Patron Sync </p>
 
 <br>
 
@@ -10,11 +10,7 @@
 </p>
 <br>
 
-<br>
-
-### How the GitHub Repository and its Linking Mechanism Works with the [HS] Tags:
-
-<br><br>
+<br><img src="https://github.com/Lin8x/VRCDownloadString/blob/main/Images/HashStudiosBlue.png" width="100%" height="5"><br><br>
 
 **Step 1:** **The GitHub Repository Structure**
 
