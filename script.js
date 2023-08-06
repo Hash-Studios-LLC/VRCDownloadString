@@ -79,7 +79,9 @@ function generateInput() {
         const color = document.getElementById(`rank${i}_color`).value.slice(1); // Note the ID change here
 
         inputStr += `[Rank${i}_Name]${rankName}[/Rank${i}_Name] `;
+        inputStr += "\n";
         inputStr += `[Rank${i}]${players}[/Rank${i}] `;
+        inputStr += "\n";
         inputStr += `[Rank${i}_Color]#${color}[/Rank${i}_Color]`; // Add the color to the string
 
         // If it's not the last rank, add two new lines for spacing
