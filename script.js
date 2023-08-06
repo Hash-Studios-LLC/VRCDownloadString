@@ -69,3 +69,10 @@ function generateInput() {
 
     document.getElementById('generatedInput').value = inputStr.trim();
 }
+
+function copyToClipboard() {
+    var textarea = document.getElementById("generatedInput");
+    textarea.select(); 
+    document.execCommand("copy");
+    alert("Copied to clipboard!");
+}
