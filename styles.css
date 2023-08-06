@@ -64,17 +64,26 @@ textarea {
 }
 
 #generatedInput {
-    width: 600px;        
-    height: 150px;     
+    width: 600px;
+    height: 150px;
     padding: 10px;
-    font-size: 1rem;     
-    color: #fff;        
+    margin: 10px;         
+    font-size: 1rem;
+    color: #fff;
     background-color: #333;
-    border: 1px solid #555;  
-    border-radius: 5px;    
-    resize: none;           
-    overflow-y: auto;       
+    border: 1px solid #555;
+    border-radius: 5px;
+    resize: none;
+    overflow-y: auto;
 }
 
+#outputContainer {
+    width: 640px;
+    background-color: transparent; 
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
 
 
