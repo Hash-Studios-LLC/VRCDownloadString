@@ -63,3 +63,13 @@ textarea {
     margin-top: 20px; /* Adds some space above the buttons for separation */
 }
 
+#generatedInput {
+    width: 80%; /* Adjusts the width to 80% of its container. You can set this to another value as desired. */
+    height: 150px; /* Adjusts the height, set as per your requirement. */
+    padding: 10px; /* Adds some internal space for better readability. */
+    margin-top: 20px; /* Adds some space above for separation. */
+    font-size: 1rem; /* Adjusts the font size, set as per your requirement. */
+    color: #000; /* Sets the text color to black for better readability. */
+    background-color: #FFF; /* Sets a white background for the textarea. */
+}
+
