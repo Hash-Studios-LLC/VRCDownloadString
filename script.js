@@ -33,42 +33,23 @@ function addRank() {
     rankInput.id = `rank${rankCounter}`;
     rankInput.placeholder = "e.g. John, Jane";
 
-    const removeButton = document.createElement('button');
-    removeButton.innerText = "Remove";
-    removeButton.onclick = function() {
-        removeRank(rankCounter);
-    }
-
     rankDiv.appendChild(rankLabelSpan);
     rankDiv.appendChild(rankNameLabel);
     rankDiv.appendChild(rankNameInput);
     rankDiv.appendChild(rankLabel);
     rankDiv.appendChild(rankInput);
-    rankDiv.appendChild(removeButton);
 
     document.getElementById('ranksContainer').appendChild(rankDiv);
 }
 
-function removeRank(rankNumber) {
-    const rankToRemove = document.getElementById(`rankContainer${rankNumber}`);
-    rankToRemove.remove();
-
-    // Adjust remaining ranks' numbers.
-    for(let i = rankNumber; i <= rankCounter; i++) {
-        const currentRank = document.getElementById(`rankContainer${i + 1}`);
-        if (currentRank) {
-            currentRank.id = `rankContainer${i}`;
-            currentRank.querySelector('.rankLabel').innerText = `Rank ${i}:`;
-            currentRank.querySelector('label[for^="rank"][for$="_name"]').innerText = `Name: `;
-            currentRank.querySelector('label[for^="rank"]:not([for$="_name"])').innerText = `Player Usernames (comma separated): `;
-            currentRank.querySelector('input[type="text"]:nth-child(2)').id = `rank${i}_name`;
-            currentRank.querySelector('input[type="text"]:nth-child(4)').id = `rank${i}`;
-            currentRank.querySelector('button').onclick = function() {
-                removeRank(i);
-            }
-        }
+function removeRank() {
+    if(rankCounter == 1) {
+        alert("You can't remove the first rank.");
+        return;
     }
-
+    
+    const lastRank = document.getElementById(`rankContainer${rankCounter}`);
+    lastRank.remove();
     rankCounter--;
 }
 
