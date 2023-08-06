@@ -1,8 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2C3A3F;  
+    background-color: #2C3A3F;
     color: #FFFFFF;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #banner {
