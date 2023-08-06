@@ -7,16 +7,18 @@
     <title>Rank Input Generator</title>
 </head>
 <body>
-    <img src="https://github.com/Hash-Studios-LLC/VRCDownloadString/blob/main/Images/HashStudiosPatronSyncBanner.png" alt="Banner" id="banner">
+    <img src="banner.jpg" alt="Banner" id="banner">
 
     <h1>Rank Input Generator</h1>
 
     <div id="ranksContainer">
-        <div class="rank">
-            <label for="rank1_name">Rank 1 Name: </label>
+        <div class="rank" id="rankContainer1">
+            <span class="rankLabel">Rank 1:</span>
+            <label for="rank1_name">Name: </label>
             <input type="text" id="rank1_name" placeholder="e.g. Warriors">
-            <label for="rank1">Rank 1 Player Usernames (comma separated): </label>
+            <label for="rank1">Player Usernames (comma separated): </label>
             <input type="text" id="rank1" placeholder="e.g. John, Jane">
+            <button onclick="removeRank(1)">Remove</button>
         </div>
     </div>
     
