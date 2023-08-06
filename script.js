@@ -34,11 +34,24 @@ function addRank() {
     rankInput.id = `rank${rankCounter}`;
     rankInput.placeholder = "e.g. John,Jane";
 
+    // Create color label and input
+    const colorLabel = document.createElement('label');
+    colorLabel.setAttribute('for', `rank${rankCounter}_color`);
+    colorLabel.innerText = 'Color: ';
+    colorLabel.style.marginLeft = '20px';
+
+    const colorInput = document.createElement('input');
+    colorInput.type = 'color';
+    colorInput.id = `rank${rankCounter}_color`;
+
+    // Appending elements to rankDiv
     rankDiv.appendChild(rankLabelSpan);
     rankDiv.appendChild(rankNameLabel);
     rankDiv.appendChild(rankNameInput);
     rankDiv.appendChild(rankLabel);
     rankDiv.appendChild(rankInput);
+    rankDiv.appendChild(colorLabel); // Append color label
+    rankDiv.appendChild(colorInput); // Append color input
 
     document.getElementById('ranksContainer').appendChild(rankDiv);
 }
