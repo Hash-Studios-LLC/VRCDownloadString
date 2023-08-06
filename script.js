@@ -57,22 +57,22 @@ function removeRank() {
 }
 
 function generateInput() {
-    let output = "";
+    let inputStr = "";
 
-    for (let i = 1; i <= rankCounter; i++) {
-        let rankName = document.getElementById("rankName" + i).value;
-        let players = document.getElementById("rank" + i).value;
+    for(let i = 1; i <= rankCounter; i++) {
+        const rankName = document.getElementById(`rank${i}_name`).value || 'NAME NOT GIVEN';
+        const players = document.getElementById(`rank${i}`).value;
 
-        output += `[Rank${i}_Name]${rankName ? rankName : "NAME NOT GIVEN"}[/Rank${i}_Name]\n`;
-        output += `[Rank${i}]${players}[/Rank${i}]`;
+        inputStr += `[Rank${i}_Name]${rankName}[/Rank${i}_Name] `;
+        inputStr += `[Rank${i}]${players}[/Rank${i}] `;
 
         // If it's not the last rank, add two new lines for spacing
         if (i < rankCounter) {
-            output += "\n\n";
+            inputStr += "\n\n";
         }
     }
 
-    document.getElementById("generatedInput").value = output;
+    document.getElementById('generatedInput').value = inputStr.trim();
 }
 
 function copyToClipboard() {
