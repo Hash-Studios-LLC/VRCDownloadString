@@ -60,15 +60,15 @@ function generateInput() {
     let output = "";
 
     for (let i = 1; i <= rankCounter; i++) {
-        let rankName = document.getElementById("rankName" + i).value;
-        let players = document.getElementById("rank" + i).value;
+        let rankName = document.getElementById(`rank${i}_name`).value;
+        let players = document.getElementById(`rank${i}`).value;
 
         output += `[Rank${i}_Name]${rankName ? rankName : "NAME NOT GIVEN"}[/Rank${i}_Name]\n`;
         output += `[Rank${i}]${players}[/Rank${i}]`;
 
         // If it's not the last rank, add two new lines for spacing
         if (i < rankCounter) {
-            output += "\n\n\n";
+            output += "\n\n";
         }
     }
 
