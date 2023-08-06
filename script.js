@@ -57,7 +57,7 @@ function removeRank() {
 }
 
 function generateInput() {
-    let output = "";
+    let inputStr = "";
 
     for (let i = 1; i <= rankCounter; i++) {
         const rankName = document.getElementById(`rank${i}_name`).value || 'NAME NOT GIVEN';
@@ -68,7 +68,7 @@ function generateInput() {
 
         // If it's not the last rank, add two new lines for spacing
         if (i < rankCounter) {
-            output += "\n\n";
+            inputStr += "\n\n";
         }
     }
 
