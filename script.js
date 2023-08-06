@@ -49,20 +49,5 @@ function removeRank() {
     }
     
     const lastRank = document.getElementById(`rankContainer${rankCounter}`);
-    lastRank.remove();
-    rankCounter--;
-}
-
-function generateInput() {
-    let inputStr = "";
-
-    for(let i = 1; i <= rankCounter; i++) {
-        const rankName = document.getElementById(`rank${i}_name`).value;
-        const players = document.getElementById(`rank${i}`).value;
-
-        inputStr += `[Rank${i}_Name]${rankName}[/Rank${i}_Name] `;
-        inputStr += `[Rank${i}]${players}[/Rank${i}] `;
-    }
-
-    document.getElementById('generatedInput').value = inputStr.trim();
-}
+    if (lastRank) {
+        last
