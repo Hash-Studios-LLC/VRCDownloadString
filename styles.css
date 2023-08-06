@@ -33,3 +33,20 @@ textarea {
     display: block;
     margin: 10px auto;
 }
+
+#ranksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rank {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rank > * {
+    margin-right: 5px;
+}
