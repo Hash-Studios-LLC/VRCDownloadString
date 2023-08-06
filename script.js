@@ -22,7 +22,7 @@ function addRank() {
     const rankNameInput = document.createElement('input');
     rankNameInput.type = 'text';
     rankNameInput.id = `rank${rankCounter}_name`;
-    rankNameInput.placeholder = "e.g. Warriors";
+    rankNameInput.placeholder = "e.g. VIP";
 
     const rankLabel = document.createElement('label');
     rankLabel.setAttribute('for', `rank${rankCounter}`);
@@ -31,7 +31,7 @@ function addRank() {
     const rankInput = document.createElement('input');
     rankInput.type = 'text';
     rankInput.id = `rank${rankCounter}`;
-    rankInput.placeholder = "e.g. John, Jane";
+    rankInput.placeholder = "e.g. John,Jane";
 
     rankDiv.appendChild(rankLabelSpan);
     rankDiv.appendChild(rankNameLabel);
