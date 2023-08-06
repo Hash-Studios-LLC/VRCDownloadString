@@ -37,7 +37,7 @@ function addRank() {
     // Create color label and input
     const colorLabel = document.createElement('label');
     colorLabel.setAttribute('for', `rank${rankCounter}_color`);
-    colorLabel.innerText = 'Color: ';
+    colorLabel.innerText = 'Rank Color: ';
     colorLabel.style.marginLeft = '20px';
 
     const colorInput = document.createElement('input');
