@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank Generator</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Rank Input Generator</title>
 </head>
+
 <body>
-    <img src="https://github.com/Hash-Studios-LLC/VRCDownloadString/raw/main/Images/HashStudiosPatronSyncBanner.png" alt="Banner" id="banner">
 
-    <h1>Rank Input Generator</h1>
+    <!-- Banner Image -->
+    <div id="bannerContainer">
+        <img src="https://github.com/Hash-Studios-LLC/VRCDownloadString/raw/main/Images/HashStudiosPatronSyncBanner.png" alt="Banner" id="banner">
+    </div>
 
+    <!-- Rank Input Containers -->
     <div id="ranksContainer">
+
+        <!-- Rank 1 as a default -->
         <div class="rank" id="rankContainer1">
             <span class="rankLabel">Rank 1:</span>
             <label for="rank1_name">Name: </label>
@@ -19,15 +26,24 @@
             <label for="rank1">Player Usernames (comma separated): </label>
             <input type="text" id="rank1" placeholder="e.g. John,Jane">
         </div>
-    </div>
-    
-    <button onclick="addRank()">Add Another Rank</button>
-    <button onclick="removeRank()">Remove Last Rank</button>
-    <button onclick="generateInput()">Generate Input</button>
 
-    <h2>Generated Input:</h2>
-    <textarea id="generatedInput" rows="10" cols="50" readonly></textarea>
+        <!-- Additional ranks will be appended here by the JavaScript -->
+
+    </div>
+
+    <!-- Buttons -->
+    <div id="buttonsContainer">
+        <button onclick="addRank()">Add Another Rank</button>
+        <button onclick="removeRank()">Remove Last Rank</button>
+        <button onclick="generateInput()">Generate Input</button>
+    </div>
+
+    <!-- Generated Input Display -->
+    <div id="outputContainer">
+        <textarea id="generatedInput" readonly></textarea>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
