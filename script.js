@@ -17,7 +17,7 @@ function addRank() {
     const rankNameInput = document.createElement('input');
     rankNameInput.type = 'text';
     rankNameInput.id = `rank${rankCounter}_name`;
-    rankNameInput.placeholder = "e.g. VIP";
+    rankNameInput.placeholder = "e.g. Warriors";
 
     const rankLabel = document.createElement('label');
     rankLabel.setAttribute('for', `rank${rankCounter}`);
@@ -26,7 +26,7 @@ function addRank() {
     const rankInput = document.createElement('input');
     rankInput.type = 'text';
     rankInput.id = `rank${rankCounter}`;
-    rankInput.placeholder = "e.g. Player,Player2";
+    rankInput.placeholder = "e.g. John, Jane";
 
     rankDiv.appendChild(rankNameLabel);
     rankDiv.appendChild(rankNameInput);
@@ -40,11 +40,11 @@ function generateInput() {
     let inputStr = "";
 
     for(let i = 1; i <= rankCounter; i++) {
-        const players = document.getElementById(`rank${i}`).value;
         const rankName = document.getElementById(`rank${i}_name`).value;
+        const players = document.getElementById(`rank${i}`).value;
 
-        inputStr += `[Rank${i}]${players}[/Rank${i}] `;
         inputStr += `[Rank${i}_Name]${rankName}[/Rank${i}_Name] `;
+        inputStr += `[Rank${i}]${players}[/Rank${i}] `;
     }
 
     document.getElementById('generatedInput').value = inputStr.trim();
