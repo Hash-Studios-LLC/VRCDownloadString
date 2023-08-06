@@ -23,6 +23,7 @@ function addRank() {
     rankNameInput.type = 'text';
     rankNameInput.id = `rank${rankCounter}_name`;
     rankNameInput.placeholder = "e.g. VIP";
+    rankNameInput.style.marginRight = "20px";
 
     const rankLabel = document.createElement('label');
     rankLabel.setAttribute('for', `rank${rankCounter}`);
