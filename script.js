@@ -28,10 +28,10 @@ function addRank() {
     rankInput.id = `rank${rankCounter}`;
     rankInput.placeholder = "e.g. Player,Player2";
 
-    rankDiv.appendChild(rankLabel);
-    rankDiv.appendChild(rankInput);
     rankDiv.appendChild(rankNameLabel);
     rankDiv.appendChild(rankNameInput);
+    rankDiv.appendChild(rankLabel);
+    rankDiv.appendChild(rankInput);
 
     document.getElementById('ranksContainer').appendChild(rankDiv);
 }
