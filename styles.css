@@ -55,3 +55,11 @@ textarea {
 .rank > * {
     margin-right: 5px;
 }
+
+#buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adds space between buttons */
+    margin-top: 20px; /* Adds some space above the buttons for separation */
+}
+
