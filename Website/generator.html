@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank Input Generator</title>
+</head>
+<body>
+    <h1>Rank Input Generator</h1>
+
+    <div id="ranksContainer">
+        <div class="rank">
+            <label for="rank1">Rank 1 Players (comma separated): </label>
+            <input type="text" id="rank1" placeholder="e.g. John, Jane">
+            <label for="rank1_name">Rank 1 Name: </label>
+            <input type="text" id="rank1_name" placeholder="e.g. Warriors">
+        </div>
+    </div>
+    
+    <button onclick="addRank()">Add Another Rank</button>
+    <button onclick="generateInput()">Generate Input</button>
+
+    <h2>Generated Input:</h2>
+    <textarea id="generatedInput" rows="10" cols="50" readonly></textarea>
+
+    <script src="script.js"></script>
+</body>
+</html>
