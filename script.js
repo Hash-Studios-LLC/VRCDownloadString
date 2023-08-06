@@ -56,6 +56,7 @@ function addRank() {
     document.getElementById('ranksContainer').appendChild(rankDiv);
 }
 
+
 function removeRank() {
     if(rankCounter == 1) {
         alert("You can't remove the first rank.");
