@@ -15,7 +15,7 @@ body {
     display: block;
 }
 
-button, input[type="text"], textarea {
+button, input[type="text"], input[type="color"], textarea {
     padding: 10px;
     margin-top: 10px;
     border: 1px solid #555;
