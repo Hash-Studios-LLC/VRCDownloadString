@@ -62,9 +62,11 @@ function generateInput() {
     for(let i = 1; i <= rankCounter; i++) {
         const rankName = document.getElementById(`rank${i}_name`).value || 'NAME NOT GIVEN';
         const players = document.getElementById(`rank${i}`).value;
+        const color = document.getElementById(`rank${i}_color`).value.slice(1); // Note the ID change here
 
         inputStr += `[Rank${i}_Name]${rankName}[/Rank${i}_Name] `;
         inputStr += `[Rank${i}]${players}[/Rank${i}] `;
+        inputStr += `[Rank${i}_Color]#${color}[/Rank${i}_Color]`; // Add the color to the string
 
         // If it's not the last rank, add two new lines for spacing
         if (i < rankCounter) {
