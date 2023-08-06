@@ -50,4 +50,21 @@ function removeRank() {
     
     const lastRank = document.getElementById(`rankContainer${rankCounter}`);
     if (lastRank) {
-        last
+        lastRank.remove();
+        rankCounter--;
+    }
+}
+
+function generateInput() {
+    let inputStr = "";
+
+    for(let i = 1; i <= rankCounter; i++) {
+        const rankName = document.getElementById(`rank${i}_name`).value || 'NAME NOT GIVEN';
+        const players = document.getElementById(`rank${i}`).value;
+
+        inputStr += `[Rank${i}_Name]${rankName}[/Rank${i}_Name] `;
+        inputStr += `[Rank${i}]${players}[/Rank${i}] `;
+    }
+
+    document.getElementById('generatedInput').value = inputStr.trim();
+}
