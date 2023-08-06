@@ -38,7 +38,9 @@ textarea {
 #ranksContainer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    max-width: 80%;  /* or another preferred value */
+    width: 100%;
 }
 
 .rank {
@@ -46,6 +48,8 @@ textarea {
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
 }
 
 .rank > * {
