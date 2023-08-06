@@ -76,3 +76,14 @@ textarea {
     overflow-y: auto;     
 }
 
+#outputContainer {
+    width: 620px; 
+    padding: 10px; 
+    background-color: #333; 
+    color: #fff;
+    border-radius: 5px; 
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
