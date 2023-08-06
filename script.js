@@ -68,7 +68,7 @@ function generateInput() {
 
         // If it's not the last rank, add two new lines for spacing
         if (i < rankCounter) {
-            output += "\n\n";
+            output += "\n\n\n";
         }
     }
 
